@@ -1,47 +1,23 @@
-![Netlify examples](netlify-badge-examples.png)
+# Temperatur Simulation mit Heizkurve
 
-# Netlify Feature Tour
+Diese Anwendung simuliert den Raumtemperaturverlauf über 24 Stunden mit Heizkurve und Außentemperatur.  
+Die Web-App basiert auf Python (Gradio) und ist über eine Landingpage erreichbar.
 
-**Access this demo site**: https://feature-tour.netlify.app
+## Live-Demo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fad6792e-1c44-44db-bd79-ea74b42b0f89/deploy-status)](https://app.netlify.com/sites/feature-tour/deploys)
+👉 [Simulation starten](https://dein-gradio-link.hf.space)
 
-## About this example site
+## Deployment
 
-This site provides a path to get started learning about Netlify features.
+- Frontend via Netlify: `index.html`
+- Backend (Gradio) via HuggingFace Spaces oder Replit
 
-- 📚 [Docs Getting Started Tutorial](https://docs.netlify.com/get-started/?utm_medium=social&utm_source=github&utm_campaign=devex-ph&utm_content=devex-examples)
+## Technologie
 
-## Speedily deploy your own version
+- Bootstrap 5.0
+- Gradio
+- Python, Matplotlib, NumPy
 
-Deploy your own version of this example site by selecting the Deploy to Netlify Button below. This will automatically:
+## Lizenz
 
-- Clone a copy of this repo to your own GitHub account
-- Create a new project in your [Netlify account](https://app.netlify.com/?utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples), linked to your new repo
-- Create an automated deployment pipeline to watch for changes on your repo
-- Build and deploy your new site
-
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-feature-tour&utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples)
-
-## Install and run this example locally
-
-You can clone this example repo to explore its features and implementation and to run it locally.
-
-```shell
-
-# 1. Clone the repository to your local development environment
-git clone git@github.com:netlify/feature-tour.git
-
-# 2. Move into the project directory
-cd feature-tour
-
-# 3. Install code dependencies
-npm install
-
-# 4. Install the Netlify CLI to let you locally serve your site using Netlify's features
-npm install -g netlify-cli
-
-# 5. Serve your site using Netlify Dev
-netlify dev
-
-```
+MIT
