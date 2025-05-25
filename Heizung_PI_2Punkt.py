@@ -120,7 +120,16 @@ class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         self.title("Temperatur Simulation")
-        self.state('zoomed')
+        #self.state('zoomed')
+        
+        #screen_width = self.winfo_screenwidth()
+        #screen_height = self.winfo_screenheight()
+        #self.geometry(f"{screen_width}x{screen_height}")
+
+        self.update_idletasks()  # Fenster vorbereiten
+        self.geometry(f"{self.winfo_screenwidth()}x{self.winfo_screenheight()}+0+0")
+        self.after(0, lambda: self.state('zoomed'))
+
         self.protocol("WM_DELETE_WINDOW", self.on_close)
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)
@@ -132,8 +141,14 @@ class App(customtkinter.CTk):
         self.init_tabs()
 
     def init_steuerung_panel(self):
-        self.left_frame = customtkinter.CTkFrame(self)
-        self.left_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
+        #self.left_frame = customtkinter.CTkFrame(self)
+        #self.left_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
+
+        #  App scrollbar machen
+        scrollable_container = customtkinter.CTkScrollableFrame(self, width=320)
+        scrollable_container.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
+        self.left_frame = scrollable_container
+
 
         # Datei-Auswahl
         customtkinter.CTkLabel(self.left_frame, text="Außentemperatur CSV wählen").pack(pady=(5, 0), padx=10, anchor="w")
@@ -230,6 +245,7 @@ class App(customtkinter.CTk):
 
         self.plot_area = customtkinter.CTkFrame(container)
         self.plot_area.grid(row=0, column=0, sticky="nsew")
+        
         container.grid_columnconfigure(0, weight=1)
         container.grid_rowconfigure(0, weight=1)
 
@@ -252,7 +268,7 @@ class App(customtkinter.CTk):
         ]:
             customtkinter.CTkCheckBox(self.controls_frame, text=text, variable=var).pack(anchor="w", padx=10)
 
-        self.fig, self.ax = plt.subplots(figsize=(20, 12))
+        self.fig, self.ax = plt.subplots(figsize=(12, 7))
         self.canvas = FigureCanvasTkAgg(self.fig, master=self.plot_area)
         self.canvas.get_tk_widget().pack(fill="both", expand=True)
 
