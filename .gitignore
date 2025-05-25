@@ -1,5 +1,8 @@
 # build output
-dist
+# dist
+build
+
+*.spec
 
 # dependencies
 node_modules/
