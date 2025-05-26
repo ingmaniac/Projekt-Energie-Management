@@ -143,7 +143,7 @@ class App(customtkinter.CTk):
         # self.left_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
 
         # Scrollbalken einfügen im Menü
-        scrollable_container = customtkinter.CTkScrollableFrame(self, width=320)
+        scrollable_container = customtkinter.CTkScrollableFrame(self, width=280)
         scrollable_container.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
         self.left_frame = scrollable_container
         # Ende Scrollbalken einfügen
