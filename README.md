@@ -1,11 +1,18 @@
 # Temperatur Simulation mit Heizkurve
 
-Diese Anwendung simuliert den Raumtemperaturverlauf über 24 Stunden mit Heizkurve und Außentemperatur.  
+Diese Anwendung simuliert den Raumtemperaturverlauf eines fiktiven Hauses mit Heizkurve und Außentemperatur.  
 Die App basiert auf Python und ist mit jeder Python IDE ausführbar
 
 ## Ausführbare .exe Dateien
 
 Ausführbare .exe Dateien für Windows Systeme wurden erstellt und sind unter /dist verfügbar
+
+## 30.06.2025
+
+Sim-Haus ersetzt alle vorigen Versionen, diese wurden nach /Archive verschoben
+- Wahlweise kann eine Ansicht mit 13 Tabs für die einzelnen Monate und eine Jahresübersicht gewählt werden
+- Aussentemperaturverlauf, Solltemperaturverlauf und PV Einstrahlungsdaten können per CSV eingelesen werden
+- Die Diagrammgröße kann in 3 Stufen varriiert werden
 
 ## 26.05.2025
 
