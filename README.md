@@ -18,15 +18,27 @@ Für Windows Nutzer ist eine ausführbare EXE Datei [Sim_Haus.exe](https://githu
 ## Bedienung der Grafischen Benutzeroberfläche
 
 Übersicht über die GUI:
-<span style="color:red">1.	Parameter Menü</span>
-<span style="color:green">2.	Diagrammfenster</span>
-<span style="color:blue">3.	Tabs Reiter</span>
-<span style="color:yellow">4.	Diagramm Einträge aus-/einblenden</span>
-<span style="color:brown">5.	Diagramm Navigation</span>
+<span style="color:red">
+1. Parameter Menü
+</span>
+<span style="color:green">
+2. Diagrammfenster
+</span>
+<span style="color:blue">
+3. Tabs Reiter
+</span>
+<span style="color:yellow">
+4. Diagramm Einträge aus-/einblenden
+</span>
+<span style="color:brown">
+5. Diagramm Navigation
+</span>
 
-![Programmoberfläche](/assets/Anleitung/Screenshot%20Programm.png)
+![Programmoberfläche](/assets/Anleitung/Programm.jpg)
 
-<span style="color:red">1.	Parameter Menü:</span>
+<span style="color:red">
+1. Parameter Menü:
+</span>
     - Monats-Tabs anzeigen: Ist diese Checkbox aktiv, wird die Diagramm Anzeige in Tabs je Monat unterteilt. In der Jahresübersicht werden alle Daten gesammelt angezeigt.
     - Aussentemperatur: hier werden die Eingabedaten aus einer CSV Datei geladen
     - T_Soll Verlauf: Soll Temperatur als CSV Datei laden
