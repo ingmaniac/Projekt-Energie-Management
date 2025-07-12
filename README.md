@@ -1,11 +1,69 @@
+# Praxis Projekt Energiemanagement
+
+Im Rahmen eines Praxisprojektes zum Thema Energiemanagement erstellten wir ein Python Script um den Temperaturverlauf eines Hauses zu simulieren.
+Ziel war es zu eruieren ob überhaupt Potential vorhanden ist um über ein Energiemanagement-System signifikant Energie zu sparen.
+Die Projektdokumentation ist als PDF-Datei [(MEWI_Master_Projekt_EMS.pdf)](https://github.com/ingmaniac/Projekt-Energie-Management/blob/main/MEWI_Master_Projekt_EMS.pdf) dem Repository angefügt.
+
 # Temperatur Simulation mit Heizkurve
 
 Diese Anwendung simuliert den Raumtemperaturverlauf eines fiktiven Hauses mit Heizkurve und Außentemperatur.  
-Die App basiert auf Python und ist mit jeder Python IDE ausführbar
+Die App basiert auf Python und ist mit jeder Python IDE ausführbar.
+Eine Video Anleitung für die IDE Thonny finden sie unter folgendem Link
+[-> Videoanleitung Thonny](https://youtube.com)
 
 ## Ausführbare .exe Dateien
 
-Ausführbare .exe Dateien für Windows Systeme wurden erstellt und sind unter /dist verfügbar
+Für Windows Nutzer ist eine ausführbare EXE Datei [Sim_Haus.exe](https://github.com/ingmaniac/Projekt-Energie-Management/blob/main/dist/Sim_Haus/Sim_Haus.exe) unter /Dist/Sim_Haus verfügbar.
+
+## Bedienung der Grafischen Benutzeroberfläche
+
+Übersicht über die GUI:
+<span style="color:red">1.	Parameter Menü</span>
+<span style="color:green">2.	Diagrammfenster</span>
+<span style="color:blue">3.	Tabs Reiter</span>
+<span style="color:yellow">4.	Diagramm Einträge aus-/einblenden</span>
+<span style="color:brown">5.	Diagramm Navigation</span>
+
+![Programmoberfläche](/assets/Anleitung/Screenshot%20Programm.png)
+
+<span style="color:red">1.	Parameter Menü:</span>
+    - Monats-Tabs anzeigen: Ist diese Checkbox aktiv, wird die Diagramm Anzeige in Tabs je Monat unterteilt. In der Jahresübersicht werden alle Daten gesammelt angezeigt.
+    - Aussentemperatur: hier werden die Eingabedaten aus einer CSV Datei geladen
+    - T_Soll Verlauf: Soll Temperatur als CSV Datei laden
+    - PV Einstrahlungsdaten: Hier können Einstrahlungsdaten als CSV Datei geladen werden. Wird keine CSV Datei geladen werden die folgenden Werte verwendet.
+    - PV-Modulleistung: Nennleistung je Modul
+    - Anzahl PV-Module: Gesamtanzahl der PV-Module
+    - Wärmeübergangskoeffizient alpha: Wärmeübergangskoeffizient der Simulation
+    - Oberfläche O: Oberfläche des gesamten Wärmeüberganges
+    - Wärmekapazität: Wärmekapazität des zu simulierenden Hauses
+    - Masse m: Masse der speicherfähigen Materialien
+    - Fallback Solltemperatur T_Soll: Solltemperatur wenn kein T-Soll Verlauf geladen wurde.
+    - Heizsystem: Luftwärmepumpe, Erdwärmepumpe oder Elektroheizung
+    - Diagrammgröße: klein für kleine Bildschirme wie Laptops oder Anzeige mit Skalierung, mittel für normale Monitore und 1080p, groß für 4k
+    - Update Plot: den Plot mit den gewählten Daten neu zeichnen
+    - Plot & Daten speichern: experimentell
+    - Standard-Heizplan erzeugen: experimentell
+
+<span style="color:green">2.	Diagramm Fenster:</span>
+    Hier werden die Diagramme gezeichnet
+
+<span style="color:blue">3.	Tabs Reiter:</span>
+    Hier wird entweder die Diagrammüberschrift bzw. die Diagramm Tabs angezeigt (12 Monate  und die Jahresansicht)
+
+<span style="color:yellow">4.	Diagramm Einträge aus-/einblenden:</span> 
+    Hier kann mit den Checkboxen gewählt werden welche Daten angezeigt werden sollen
+
+<span style="color:brown">5.	Diagramm Navigation:</span>
+    - ![Home](/assets/Anleitung/Home.png) Anzeige zurücksetzen
+    - ![Zurück](/assets/Anleitung/Zurück.png) Zurück
+    - ![Vor](/assets/Anleitung/Vor.png) Vor
+    - ![Pan/Zoom](/assets/Anleitung/Pan.png) Pan / Zoom: linke Maustaste gedrückt halten zum Pan, rechte Maustaste gedrückt halten zum Zoomen
+    - ![Zoom](/assets/Anleitung/Lukiluki.png) Rechteckiger Zoom: Zoom auf Rechteckauswahl mit der Maus
+    - ![Einstellungen](/assets/Anleitung/Schiebedings.png) Plot Einstellungen mittels Schieberegler
+    - ![Speichern](/assets/Anleitung/Diskette.png) Diagramm speichern
+
+Eine Videoanleitung zur Bedienung ist unter folgendem Link erreichbar
+[-> Videoanleitung GUI Sim_Haus.py](https://youtube.com)
 
 ## 30.06.2025
 
