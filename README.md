@@ -64,7 +64,7 @@ Für Windows Nutzer ist eine ausführbare EXE Datei [Sim_Haus.exe](https://githu
     - ![Speichern](/assets/Anleitung/Diskette.png) Diagramm speichern
 
 Eine Videoanleitung zur Bedienung ist unter folgendem Link erreichbar
-[-> Videoanleitung GUI Sim_Haus.py](https://youtube.com)
+[-> Videoanleitung GUI Sim_Haus.py](https://youtu.be/Wh7M2QwnfSA)
 
 ## 30.06.2025
 
