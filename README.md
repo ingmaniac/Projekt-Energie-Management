@@ -9,7 +9,7 @@ Die Projektdokumentation ist als PDF-Datei [(MEWI_Master_Projekt_EMS.pdf)](https
 Diese Anwendung simuliert den Raumtemperaturverlauf eines fiktiven Hauses mit Heizkurve und Außentemperatur.  
 Die App basiert auf Python und ist mit jeder Python IDE ausführbar.
 Eine Video Anleitung für die IDE Thonny finden sie unter folgendem Link
-[-> Videoanleitung Thonny](https://youtube.com)
+[-> Videoanleitung Thonny](https://youtu.be/CciGaAZ3K3E)
 
 ## Ausführbare .exe Dateien
 
